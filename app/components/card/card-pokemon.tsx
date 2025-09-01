@@ -1,5 +1,5 @@
 import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
-import { PokemonsDTO } from "../../../types/pokemons.dto";
+import { PokemonsDTO } from "../../types/pokemons.dto";
 
 type CardPokemonProps = {
   pokemon: PokemonsDTO;
