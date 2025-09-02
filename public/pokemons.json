@@ -1030,7 +1030,7 @@
 		"greatball": 5000,
 		"superball": 1800,
 		"ultraball": 834,
-		"level": 0,
+		"level": 60,
 		"tipos": ["/assets/fighting.png"]
 	},
 	{
@@ -1481,7 +1481,7 @@
 		"greatball": 4000,
 		"superball": 1440,
 		"ultraball": 667,
-		"level": 0,
+		"level": 80,
 		"tipos": ["/assets/psychic.png", "/assets/fairy.png"]
 	},
 	{
@@ -1591,7 +1591,7 @@
 		"greatball": 100,
 		"superball": 36,
 		"ultraball": 17,
-		"level": 0,
+		"level": 1,
 		"tipos": ["/assets/water.png"]
 	},
 	{
@@ -5331,7 +5331,7 @@
 		"greatball": 3000,
 		"superball": 1080,
 		"ultraball": 500,
-		"level": 0,
+		"level": 10,
 		"tipos": ["/assets/steel.png"]
 	},
 	{
@@ -6156,7 +6156,7 @@
 		"greatball": 300,
 		"superball": 108,
 		"ultraball": 50,
-		"level": 0,
+		"level": 20,
 		"tipos": ["/assets/fire.png"]
 	},
 	{
@@ -6167,7 +6167,7 @@
 		"greatball": 800,
 		"superball": 288,
 		"ultraball": 134,
-		"level": 0,
+		"level": 40,
 		"tipos": ["/assets/fire.png"]
 	},
 	{
@@ -6178,7 +6178,7 @@
 		"greatball": 1800,
 		"superball": 648,
 		"ultraball": 300,
-		"level": 0,
+		"level": 100,
 		"tipos": ["/assets/fire.png"]
 	},
 	{
@@ -6189,7 +6189,7 @@
 		"greatball": 300,
 		"superball": 108,
 		"ultraball": 50,
-		"level": 0,
+		"level": 100,
 		"tipos": ["/assets/grass.png", "/assets/dragon.png"]
 	},
 	{
@@ -6200,7 +6200,7 @@
 		"greatball": 15000,
 		"superball": 5400,
 		"ultraball": 2500,
-		"level": 0,
+		"level": 100,
 		"tipos": ["/assets/grass.png", "/assets/dragon.png"]
 	},
 	{
@@ -6211,7 +6211,7 @@
 		"greatball": 15000,
 		"superball": 5400,
 		"ultraball": 2500,
-		"level": 0,
+		"level": 80,
 		"tipos": ["/assets/grass.png", "/assets/dragon.png"]
 	},
 	{
