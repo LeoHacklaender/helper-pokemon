@@ -1,4 +1,15 @@
-import { Box, Container, Grid, TextField, Typography } from "@mui/material";
+import {
+	Box,
+	Container,
+	FormControl,
+	Grid,
+	InputLabel,
+	MenuItem,
+	Select,
+	type SelectChangeEvent,
+	TextField,
+	Typography,
+} from "@mui/material";
 import type { PokemonsDTO } from "../../types/pokemons.dto";
 import { CardPokemon } from "../card/card-pokemon";
 import { ThemeToggle } from "../theme-toogle/theme-toogle";
@@ -10,6 +21,8 @@ type SearchPokemonProps = {
 	onClick: (nome: string) => void;
 	isDarkMode: boolean;
 	setIsDarkMode: (isDarkMode: boolean) => void;
+	handleLevelChange: (event: SelectChangeEvent) => void;
+	level: string;
 };
 
 export function SearchPokemon({
@@ -19,6 +32,8 @@ export function SearchPokemon({
 	onClick,
 	isDarkMode,
 	setIsDarkMode,
+	handleLevelChange,
+	level,
 }: SearchPokemonProps) {
 	return (
 		<Container maxWidth="lg" sx={{ mt: 4 }}>
@@ -34,14 +49,28 @@ export function SearchPokemon({
 				<ThemeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 			</Box>
 
-			<TextField
-				label="Buscar por nome"
-				variant="outlined"
-				fullWidth
-				value={filtro}
-				onChange={(e) => setFiltro(e.target.value)}
-				sx={{ mb: 4 }}
-			/>
+			<Box display="flex" gap={2}>
+				<TextField
+					label="Buscar por nome"
+					variant="outlined"
+					fullWidth
+					value={filtro}
+					onChange={(e) => setFiltro(e.target.value)}
+					sx={{ mb: 4 }}
+				/>
+
+				<FormControl fullWidth>
+					<InputLabel>Level</InputLabel>
+					<Select value={level} label="Level" onChange={handleLevelChange}>
+						<MenuItem value="">Todos</MenuItem>
+						<MenuItem value={10}>10</MenuItem>
+						<MenuItem value={20}>20</MenuItem>
+						<MenuItem value={40}>40</MenuItem>
+						<MenuItem value={80}>80</MenuItem>
+						<MenuItem value={100}>100</MenuItem>
+					</Select>
+				</FormControl>
+			</Box>
 
 			<Grid container spacing={2}>
 				{usuariosFiltrados.map((pokemon) => (

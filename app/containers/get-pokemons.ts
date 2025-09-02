@@ -1,3 +1,4 @@
+import type { SelectChangeEvent } from "@mui/material";
 import { useEffect, useMemo, useState } from "react";
 import type { PokemonsDTO } from "../types/pokemons.dto";
 import { darkTheme, lightTheme } from "../utils/theme";
@@ -6,6 +7,7 @@ export function useGetPokemons() {
 	const [isDarkMode, setIsDarkMode] = useState(false);
 	const [usuarios, setUsuarios] = useState<PokemonsDTO[]>([]);
 	const [filtro, setFiltro] = useState("");
+	const [level, setLevel] = useState<string>("");
 
 	const theme = useMemo(
 		() => (isDarkMode ? darkTheme : lightTheme),
@@ -18,9 +20,17 @@ export function useGetPokemons() {
 			.then((data) => setUsuarios(data));
 	}, []);
 
-	const usuariosFiltrados = usuarios.filter((u) =>
-		u.nome.toLowerCase().includes(filtro.toLowerCase()),
-	);
+	const usuariosFiltrados = usuarios.filter((u) => {
+		const nomeFiltra =
+			filtro === "" || u.nome?.toLowerCase().includes(filtro.toLowerCase());
+		const levelFiltra = level === "" || u.level === Number(level);
+		return nomeFiltra && levelFiltra;
+	});
+
+	const handleLevelChange = (event: SelectChangeEvent) => {
+		setLevel(event.target.value as string);
+		setFiltro(""); // Limpa o filtro de nome ao trocar o level, se desejar
+	};
 
 	const onClick = (value: string) => {
 		alert(`Você clicou no Pokémon: ${value}`);
@@ -34,5 +44,7 @@ export function useGetPokemons() {
 		isDarkMode,
 		setIsDarkMode,
 		theme,
+		handleLevelChange,
+		level,
 	};
 }

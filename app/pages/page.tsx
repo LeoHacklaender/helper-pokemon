@@ -14,6 +14,8 @@ export default function Home() {
 		isDarkMode,
 		setIsDarkMode,
 		theme,
+		handleLevelChange,
+		level,
 	} = useGetPokemons();
 
 	return (
@@ -27,6 +29,8 @@ export default function Home() {
 				setFiltro={setFiltro}
 				usuariosFiltrados={usuariosFiltrados}
 				onClick={onClick}
+				handleLevelChange={handleLevelChange}
+				level={level}
 			/>
 		</ThemeProvider>
 	);

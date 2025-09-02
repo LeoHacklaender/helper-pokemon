@@ -10,11 +10,22 @@
 	},
 	"formatter": {
 		"enabled": true,
+		"includes": [
+			"!node_modules/",
+			"!.next/",
+			"app/**/*.ts*",
+			"public/**/*.json"
+		],
 		"indentStyle": "tab"
 	},
 	"linter": {
 		"enabled": true,
-		"includes": ["!node_modules/", "!.next/", "app/**/*.ts*"],
+		"includes": [
+			"!node_modules/",
+			"!.next/",
+			"app/**/*.ts*",
+			"public/**/*.json"
+		],
 		"rules": {
 			"recommended": true
 		}

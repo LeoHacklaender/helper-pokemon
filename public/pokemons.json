@@ -1988,7 +1988,7 @@
 		"superball": 1080,
 		"ultraball": 500,
 		"level": 100,
-		"tipos": ["/assets/electric.png"]
+		"tipos": ["/assets/electric.png", "/assets/dark.png"]
 	},
 	{
 		"imagem": "https://img.pokemondb.net/sprites/home/normal/pichu.png",
