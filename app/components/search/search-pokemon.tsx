@@ -1,19 +1,11 @@
 import {
 	Box,
-	Button,
-	Checkbox,
 	Container,
-	FormControl,
 	Grid,
-	InputLabel,
-	MenuItem,
-	Select,
 	type SelectChangeEvent,
-	TextField,
 	Typography,
 } from "@mui/material";
 import type { PokemonsDTO } from "../../types/pokemons.dto";
-import { NIVEIS } from "../../utils/constantes";
 import { CardPokemon } from "../card/card-pokemon";
 import { Filter } from "../filter/filter";
 import { ThemeToggle } from "../theme-toogle/theme-toogle";
