@@ -1,5 +1,7 @@
 import {
 	Box,
+	Button,
+	Checkbox,
 	Container,
 	FormControl,
 	Grid,
@@ -11,7 +13,9 @@ import {
 	Typography,
 } from "@mui/material";
 import type { PokemonsDTO } from "../../types/pokemons.dto";
+import { NIVEIS } from "../../utils/constantes";
 import { CardPokemon } from "../card/card-pokemon";
+import { Filter } from "../filter/filter";
 import { ThemeToggle } from "../theme-toogle/theme-toogle";
 
 type SearchPokemonProps = {
@@ -49,28 +53,12 @@ export function SearchPokemon({
 				<ThemeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 			</Box>
 
-			<Box display="flex" gap={2}>
-				<TextField
-					label="Buscar por nome"
-					variant="outlined"
-					fullWidth
-					value={filtro}
-					onChange={(e) => setFiltro(e.target.value)}
-					sx={{ mb: 4 }}
-				/>
-
-				<FormControl fullWidth>
-					<InputLabel>Level</InputLabel>
-					<Select value={level} label="Level" onChange={handleLevelChange}>
-						<MenuItem value="">Todos</MenuItem>
-						<MenuItem value={10}>10</MenuItem>
-						<MenuItem value={20}>20</MenuItem>
-						<MenuItem value={40}>40</MenuItem>
-						<MenuItem value={80}>80</MenuItem>
-						<MenuItem value={100}>100</MenuItem>
-					</Select>
-				</FormControl>
-			</Box>
+			<Filter
+				filtro={filtro}
+				handleLevelChange={handleLevelChange}
+				level={level}
+				setFiltro={setFiltro}
+			/>
 
 			<Grid container spacing={2}>
 				{usuariosFiltrados.map((pokemon) => (

@@ -24,6 +24,7 @@ export function useGetPokemons() {
 		const nomeFiltra =
 			filtro === "" || u.nome?.toLowerCase().includes(filtro.toLowerCase());
 		const levelFiltra = level === "" || u.level === Number(level);
+
 		return nomeFiltra && levelFiltra;
 	});
 
