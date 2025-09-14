@@ -16,6 +16,8 @@ export default function Home() {
 		theme,
 		handleLevelChange,
 		level,
+		handleTipoChange,
+		tipo
 	} = useGetPokemons();
 
 	return (
@@ -31,6 +33,9 @@ export default function Home() {
 				onClick={onClick}
 				handleLevelChange={handleLevelChange}
 				level={level}
+				handleTipoChange={handleTipoChange}
+				tipo={tipo}	
+
 			/>
 		</ThemeProvider>
 	);
