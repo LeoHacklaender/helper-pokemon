@@ -29,7 +29,7 @@ export function CardPokemon({ pokemon, onClick }: CardPokemonProps) {
 						alignItems="center"
 						gap={0.5}
 					>
-						{pokemon.tipos.map((tipo) => (
+						{pokemon.tiposImagem.map((tipo) => (
 							<CardMedia
 								key={tipo}
 								component="img"

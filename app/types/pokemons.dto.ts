@@ -8,6 +8,7 @@ export type PokemonsDTO = {
 	greatball: number;
 	superball: number;
 	ultraball: number;
+	tiposImagem: string[];
 };
 
 export type TiposPokemon = {
