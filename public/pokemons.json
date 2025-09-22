@@ -426,7 +426,7 @@
         ]
     },
     {
-        "imagem": "/assets/alola_raichu.png",
+        "imagem": "https://img.pokemondb.net/sprites/home/normal/raichu-alolan.png",
         "nome": "Alolan Raichu",
         "preco": "$300.000",
         "pokeball": 45000,
@@ -854,7 +854,7 @@
         ]
     },
     {
-        "imagem": "/assets/alola_diglett.png",
+        "imagem": "https://img.pokemondb.net/sprites/home/normal/diglett-alolan.png",
         "nome": "Alolan Diglett",
         "preco": "$30.000",
         "pokeball": 4500,
@@ -888,7 +888,7 @@
         ]
     },
     {
-        "imagem": "/assets/alola_dugtrio.png",
+        "imagem": "https://img.pokemondb.net/sprites/home/normal/dugtrio-alolan.png",
         "nome": "Alolan Dugtrio",
         "preco": "$140.000",
         "pokeball": 21000,
@@ -922,7 +922,7 @@
         ]
     },
     {
-        "imagem": "/assets/alola_meowth.png",
+        "imagem": "https://img.pokemondb.net/sprites/home/normal/meowth-alolan.png",
         "nome": "Alolan Meowth",
         "preco": "$30.000",
         "pokeball": 4500,
@@ -938,7 +938,7 @@
         ]
     },
     {
-        "imagem": "/assets/galarian_meowth.png",
+        "imagem": "https://img.pokemondb.net/sprites/home/normal/meowth-galarian.png",
         "nome": "Galarian Meowth",
         "preco": "$10.000",
         "pokeball": 1500,
@@ -970,7 +970,7 @@
         ]
     },
     {
-        "imagem": "/assets/alola_persian.png",
+        "imagem": "https://img.pokemondb.net/sprites/home/normal/persian-alolan.png",
         "nome": "Alolan Persian",
         "preco": "$150.000",
         "pokeball": 22500,
@@ -1334,7 +1334,7 @@
         ]
     },
     {
-        "imagem": "https://img.pokemondb.net/sprites/home/normal/alolan geodude.png",
+        "imagem": "https://img.pokemondb.net/sprites/home/normal/geodude-alolan.png",
         "nome": "Alolan Geodude",
         "preco": "$30.000",
         "pokeball": 4500,
@@ -1370,7 +1370,7 @@
         ]
     },
     {
-        "imagem": "https://img.pokemondb.net/sprites/home/normal/alolan graveler.png",
+        "imagem": "https://img.pokemondb.net/sprites/home/normal/graveler-alolan.png",
         "nome": "Alolan Graveler",
         "preco": "$140.000",
         "pokeball": 21000,
@@ -1424,7 +1424,7 @@
         ]
     },
     {
-        "imagem": "https://img.pokemondb.net/sprites/home/normal/galarian ponyta.png",
+        "imagem": "https://img.pokemondb.net/sprites/home/normal/ponyta-galarian.png",
         "nome": "Galarian Ponyta",
         "preco": "$80.000",
         "pokeball": 12000,
@@ -1456,7 +1456,7 @@
         ]
     },
     {
-        "imagem": "https://img.pokemondb.net/sprites/home/normal/galarian rapidash.png",
+        "imagem": "https://img.pokemondb.net/sprites/home/normal/rapidash-galarian.png",
         "nome": "Galarian Rapidash",
         "preco": "$150.000",
         "pokeball": 22500,
@@ -1580,7 +1580,7 @@
         ]
     },
     {
-        "imagem": "https://img.pokemondb.net/sprites/home/normal/galarian farfetchd.png",
+        "imagem": "https://img.pokemondb.net/sprites/home/normal/farfetchd-galarian.png",
         "nome": "Galarian FarfetchD",
         "preco": "$50.000",
         "pokeball": 7500,
@@ -1666,7 +1666,7 @@
         ]
     },
     {
-        "imagem": "https://img.pokemondb.net/sprites/home/normal/alolan grimer.png",
+        "imagem": "https://img.pokemondb.net/sprites/home/normal/grimer-alolan.png",
         "nome": "Alolan Grimer",
         "preco": "$12.000",
         "pokeball": 1800,
@@ -1700,7 +1700,7 @@
         ]
     },
     {
-        "imagem": "https://img.pokemondb.net/sprites/home/normal/alolan muk.png",
+        "imagem": "https://img.pokemondb.net/sprites/home/normal/muk-alolan.png",
         "nome": "Alolan Muk",
         "preco": "$300.000",
         "pokeball": 45000,
@@ -7758,7 +7758,7 @@
         ]
     },
     {
-        "imagem": "https://img.pokemondb.net/sprites/home/normal/galarian darumaka.png",
+        "imagem": "https://img.pokemondb.net/sprites/home/normal/darumaka-galarian.png",
         "nome": "Galarian Darumaka",
         "preco": "$80.000",
         "pokeball": 12000,
@@ -7790,7 +7790,7 @@
         ]
     },
     {
-        "imagem": "https://img.pokemondb.net/sprites/home/normal/galarian darmanitan.png",
+        "imagem": "https://img.pokemondb.net/sprites/home/normal/darmanitan-galarian-standard.png",
         "nome": "Galarian Darmanitan",
         "preco": "$150.000",
         "pokeball": 22500,
@@ -9320,7 +9320,7 @@
         ]
     },
     {
-        "imagem": "https://img.pokemondb.net/sprites/home/normal/lycanroc dusk form.png",
+        "imagem": "https://img.pokemondb.net/sprites/home/normal/lycanroc-dusk.png",
         "nome": "Lycanroc Dusk Form",
         "preco": "$115.000",
         "pokeball": 17250,
@@ -9336,7 +9336,7 @@
         ]
     },
     {
-        "imagem": "https://img.pokemondb.net/sprites/home/normal/lycanroc midnight form.png",
+        "imagem": "https://img.pokemondb.net/sprites/home/normal/lycanroc-midnight.png",
         "nome": "Lycanroc Midnight Form",
         "preco": "$115.000",
         "pokeball": 17250,
@@ -9642,7 +9642,7 @@
         ]
     },
     {
-        "imagem": "https://img.pokemondb.net/sprites/home/normal/toxtricity low key form.png",
+        "imagem": "https://img.pokemondb.net/sprites/home/normal/toxtricity-low-key.png",
         "nome": "Toxtricity Low Key Form",
         "preco": "$70.000",
         "pokeball": 10500,
