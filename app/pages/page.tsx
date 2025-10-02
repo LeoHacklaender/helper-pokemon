@@ -17,7 +17,9 @@ export default function Home() {
 		handleLevelChange,
 		level,
 		handleTipoChange,
-		tipo
+		tipo,
+		dificuldade,
+		handleDificuldadeChange,
 	} = useGetPokemons();
 
 	return (
@@ -35,7 +37,8 @@ export default function Home() {
 				level={level}
 				handleTipoChange={handleTipoChange}
 				tipo={tipo}	
-
+				dificuldade={dificuldade}
+				handleDificuldadeChange={handleDificuldadeChange}
 			/>
 		</ThemeProvider>
 	);

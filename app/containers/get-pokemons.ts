@@ -9,6 +9,7 @@ export function useGetPokemons() {
   const [filtro, setFiltro] = useState("");
   const [level, setLevel] = useState<string>("Todos");
   const [tipo, setTipo] = useState<string[]>([]);
+  const [dificuldade, setDificuldade] = useState<string>("Todos");
 
   const theme = useMemo(
     () => (isDarkMode ? darkTheme : lightTheme),
@@ -34,6 +35,8 @@ export function useGetPokemons() {
   const usuariosFiltrados = pokemons.filter((u) => {
     const nomeFiltra =
       filtro === "" || u.nome?.toLowerCase().includes(filtro.toLowerCase());
+    const dificuldadeFiltra =
+      dificuldade === "Todos" || u.dificuldade === dificuldade;
     const levelFiltra = level === "Todos" || u.level === Number(level);
     const tipoFiltra =
       tipo.length === 0 ||
@@ -44,8 +47,13 @@ export function useGetPokemons() {
             .includes(t.toLowerCase())
         ));
 						
-    return nomeFiltra && levelFiltra && tipoFiltra;
+    return nomeFiltra && dificuldadeFiltra && levelFiltra && tipoFiltra;
   });
+
+  const handleDificuldadeChange = (event: SelectChangeEvent) => {
+    setDificuldade(event.target.value as string);
+    setFiltro(""); // Limpa o filtro de nome ao trocar a dificuldade, se desejar
+  }
 
   const handleLevelChange = (event: SelectChangeEvent) => {
     setLevel(event.target.value as string);
@@ -73,5 +81,7 @@ export function useGetPokemons() {
     level,
     tipo,
     handleTipoChange,
+    dificuldade,
+    handleDificuldadeChange,
   };
 }

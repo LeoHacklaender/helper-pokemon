@@ -21,6 +21,8 @@ type SearchPokemonProps = {
   level: string;
   tipo: string[];
   handleTipoChange: (event: SelectChangeEvent<string[]>) => void;
+  dificuldade: string;
+	handleDificuldadeChange: (event: SelectChangeEvent) => void;
 };
 
 export function SearchPokemon({
@@ -34,6 +36,8 @@ export function SearchPokemon({
   level,
   tipo,
   handleTipoChange,
+  dificuldade,
+  handleDificuldadeChange,
 }: SearchPokemonProps) {
   return (
     <Container maxWidth="lg" sx={{ mt: 4 }}>
@@ -56,6 +60,8 @@ export function SearchPokemon({
         setFiltro={setFiltro}
         tipo={tipo}
         handleTipoChange={handleTipoChange}
+        dificuldade={dificuldade}
+        handleDificuldadeChange={handleDificuldadeChange}
       />
 
       <Grid container spacing={2}>

@@ -9,7 +9,7 @@ import {
   type SelectChangeEvent,
   TextField,
 } from "@mui/material";
-import { LEVELS, TIPOS_POKEMON } from "../../utils/constantes";
+import { DIFICULDADES, LEVELS, TIPOS_POKEMON } from "../../utils/constantes";
 
 type FilterProps = {
   filtro: string;
@@ -18,6 +18,8 @@ type FilterProps = {
   level: string;
   tipo: string[];
   handleTipoChange: (event: SelectChangeEvent<string[]>) => void;
+  dificuldade: string;
+  handleDificuldadeChange: (event: SelectChangeEvent) => void;
 };
 
 export function Filter({
@@ -27,9 +29,21 @@ export function Filter({
   setFiltro,
   tipo,
   handleTipoChange,
+  dificuldade,
+  handleDificuldadeChange,
 }: FilterProps) {
   return (
     <Box display="flex" gap={2}>
+      <FormControl sx={{ minWidth: 150 }}>
+        <InputLabel>Dificuldade</InputLabel>
+        <Select value={dificuldade} label="Dificuldade" onChange={handleDificuldadeChange}>
+          {DIFICULDADES.map((item) => (
+            <MenuItem key={item} value={item}>
+              {item}
+            </MenuItem>
+          ))}
+        </Select>
+      </FormControl>
       <FormControl sx={{ minWidth: 120 }}>
         <InputLabel>Level</InputLabel>
         <Select value={level} label="Level" onChange={handleLevelChange}>
@@ -49,6 +63,14 @@ export function Filter({
           label="Tipos"
           onChange={handleTipoChange}
           renderValue={(selected) => selected.join(", ")}
+           MenuProps={{
+            PaperProps: {
+              style: {
+                maxHeight: 48 * 6,
+                overflowY: "auto",
+              },
+            },
+          }}
         >
           {TIPOS_POKEMON.map((item) => (
             <MenuItem key={item.tipo} value={item.tipo}>
