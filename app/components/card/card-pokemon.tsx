@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
+import { Avatar, Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 import type { PokemonsDTO } from "../../types/pokemons.dto";
 
 type CardPokemonProps = {
@@ -58,10 +58,15 @@ export function CardPokemon({ pokemon, onClick }: CardPokemonProps) {
             alt={pokemon.nome}
           />
         </Box>
+        <Box display="flex" justifyContent="center" gap={3} marginTop={2} marginBottom={2}>
+        {pokemon.medias.map((media) => (
+          <Box key={media.ball} display="flex" gap={0.5}>
+            <Avatar alt={media.ball} src={media.ball} sx={{ width: 20, height: 20 }} />           
+            <Typography color="text.secondary">{media.media}</Typography>
+          </Box>
+        ))}
+        </Box>
         <Typography color="text.secondary">Preço: {pokemon.preco}</Typography>
-        <Typography color="text.secondary">
-          UltraBall: {pokemon.ultraball}
-        </Typography>
         <Typography variant="subtitle2" color="text.secondary">
           {pokemon.dificuldade}
         </Typography>

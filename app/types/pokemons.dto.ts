@@ -10,7 +10,13 @@ export type PokemonsDTO = {
 	ultraball: number;
 	tiposImagem: string[];
 	dificuldade: string;
+	medias: Media[];
 };
+
+export type Media = {
+	ball: string;
+	media: string;
+}
 
 export type TiposPokemon = {
 	tipo: string;

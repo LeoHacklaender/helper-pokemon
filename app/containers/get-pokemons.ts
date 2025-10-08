@@ -4,7 +4,7 @@ import type { PokemonsDTO } from "../types/pokemons.dto";
 import { darkTheme, lightTheme } from "../utils/theme";
 
 export function useGetPokemons() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const [pokemons, setPokemons] = useState<PokemonsDTO[]>([]);
   const [filtro, setFiltro] = useState("");
   const [level, setLevel] = useState<string>("Todos");
